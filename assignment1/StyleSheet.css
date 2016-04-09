@@ -1,0 +1,16 @@
+﻿h1 {
+    color: darkblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+p {
+    line-height: 40px;
+}
+table a {
+    text-decoration: none;
+}
+#results {
+    color: darkgreen;
+}
+#greeting {
+    color: gray;
+}
