@@ -1,0 +1,10 @@
+Invoked getVenues()
+Returned String[]
+Invoked getArtists()
+Returned String[]
+Invoked getShows()
+Returned String[]
+Invoked byVenue(string vName) "Comet"
+Returned show[]
+Invoked byArtist(string aName) "Black Breath"
+Returned show[]
