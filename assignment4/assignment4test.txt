@@ -1,0 +1,11 @@
+Selected "Comet" in venue dropdown
+Returned 5 shows
+Selected "Jazz Alley" in venue dropdown
+Returned the same 5 shows
+Tested the service
+Same result
+(So at least not a problem with the client)
+Artist dropdown results are similarly identical-looking
+"All Shows!" button returns a list of "Item"s
+Web Client mirrors service's results
+So... the web client is a success?
