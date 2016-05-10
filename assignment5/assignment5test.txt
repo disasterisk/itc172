@@ -1,0 +1,5 @@
+Entered venue name, address, city, state, zip, phone, email, web page, login name and password (All strings). Left age restriction at default "0" (Int).
+Returned "True" (boolean).
+
+Entered previously entered login name and password into venueLogin()
+Returned 1 (int).
