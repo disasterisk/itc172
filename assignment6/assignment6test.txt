@@ -1,0 +1,46 @@
+Started at registration page
+entered text into venue name, address, city, zip code, phone, email, webpage, age restriction, login name and matching text into both password fields.
+pressed submit button
+redirected me to login
+Used previously entered login name (snakes) and password (Sssnake)
+Redirected to Add Show page
+
+Back at registration
+Entered no text
+Pressed Register
+Validation errors on venue name, address, city, state, zip code, login name, password fields 1 and 2
+Entered arbitrary alphanumeric strings into all fields
+Validation errors on venue phone number, email, webpage, age restriction and password confirmation.
+Entered vaguely url formatted arbitrary string in webpage field (hdy.fdshjk.sdk)
+("http://hdy.fdshjk.sdk" and "https://hdy.fdshjk.sdk" also work)
+Validation error on webpage field disappears
+Enter random but matching alphanumeric text into password fields (gDgAj0osn0)
+Validation error on password fields dissapearas
+Enter 10 arbitrary digits into phone number field
+Validation error is still there
+Put in phone number format ((032)161-1197)
+Validation error dissapears
+Change number format (032-161-1197)
+Still no validation error
+Delete end digit (032-161-119)
+Validation error reappears
+Add @ to middle of string in email field (WAD@yQJE4uA)
+Validation error still there
+Added a . to the string (WAD@yQJE.4uA)
+Validation error disappears
+Added . to webpage string (73OOVy4.Tku)
+Validation error disappears
+Set age restriction to (-3)
+Validation error still there
+Set age restriction to (66)
+Validation error still there
+Set age restriction to (31)
+Validation error disappears
+Pressed register button
+Redirected to login page
+Entered arbitrary login and password
+Invalid username or password error
+Entered previous user (snakes) and arbitrary password
+Invalid username or password error
+entered new user (sA5LNGmbk8) and their password (gDgAj0osn0)
+redirected to add show page
