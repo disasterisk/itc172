@@ -1,0 +1,6 @@
+Entered show name (string), date (datetime), time (timespan), and ticket info (string). I also entered the venue key which I am hoping to get from the session key in practice.
+Returned true
+Entered artist name (string), web page (string) and email (string).
+Returned true
+Entered show name (string), artist name (string), artist start time (time span), and more detail (string).
+Returned true
