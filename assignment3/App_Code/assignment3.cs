@@ -55,6 +55,7 @@ public class assignment3 : Iassignment3
                         s.ShowName,
                         s.ShowDate,
                         s.ShowTime,
+                        v.VenueName
                     };
         List<show> vShows = new List<show>();
         foreach (var entry in shows)
@@ -63,6 +64,7 @@ public class assignment3 : Iassignment3
             info.name = entry.ShowName;
             info.date = entry.ShowDate.ToShortDateString();
             info.start = entry.ShowTime.ToString();
+            info.venue = entry.VenueName;
 
             vShows.Add(info);
         }
@@ -96,5 +98,10 @@ public class assignment3 : Iassignment3
         }
 
         return aShow;
+    }
+     public string getVenue(int key)
+    {
+        string venue = (from v in data.Venues where v.VenueKey.Equals(key) select v.VenueName).ToString();
+        return venue;
     }
 }

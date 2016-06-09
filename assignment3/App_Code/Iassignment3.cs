@@ -23,6 +23,9 @@ public interface Iassignment3
 
     [OperationContract]
     List<show> byArtist(string aName);
+
+    [OperationContract]
+    string getVenue(int key);
 }
 [DataContract]
 public class show
