@@ -8,11 +8,13 @@ using System.Web.UI.WebControls;
 public partial class editShow : System.Web.UI.Page
 {
     showManagerReference.IaddShowServiceClient data = new showManagerReference.IaddShowServiceClient();
+    assignment3Ref.Iassignment3Client d2 = new assignment3Ref.Iassignment3Client();
+    
     protected void Page_Load(object sender, EventArgs e)
     {
         if(Session["UserKey"]==null)
         {
-            Response.Redirect("");
+            Response.Redirect("../assignment6/Default.aspx");
         }
         if(!IsPostBack)
         {
@@ -24,13 +26,13 @@ public partial class editShow : System.Web.UI.Page
     
     protected void makeShowDrop()
     {
+        string venue = d2.getVenue((int)(Session["UserKey"]));
+        List<showManagerReference.Show> shows = new List<showManagerReference.Show>(d2.byVenue(venue));
         List<string> showList = new List<string>();
-        showManagerReference.Show[] shows = data.getShows((int)(Session["UserKey"]));
         foreach(var s in shows)
         {
-            showList.Add(s.ShowName);
+            showList.Add()
         }
-        showDrop.DataSource = showList;
         showDrop.DataBind();
         showDrop.Items.Insert(0, "Select Show");
     }
@@ -42,7 +44,7 @@ public partial class editShow : System.Web.UI.Page
     protected void showDrop_SelectedIndexChanged(object sender, EventArgs e)
     {
         showData.DataSource = showDrop.SelectedItem;
-        detailArtistDrop.DataSource = data.getArtists();
+        detailArtistDrop.DataSource = d2.getArtist();
         detailArtistDrop.DataBind();
         detailArtistDrop.Items.Insert(0, "Select Artist");
     }

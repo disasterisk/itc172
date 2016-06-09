@@ -12,7 +12,7 @@ public partial class _Default : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         if (Session["UserKey"] == null)
-            Response.Redirect("");
+            Response.Redirect("../assignment6/Default.aspx");
     }
 
     protected void showButton_Click(object sender, EventArgs e)
