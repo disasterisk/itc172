@@ -11,7 +11,7 @@ public partial class addArtist : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         if (Session["UserKey"] == null)
-            Response.Redirect("../assignment6/Default.aspx");
+            Response.Redirect("venueLogin.aspx");
     }
 
     protected void addArtistButton_Click(object sender, EventArgs e)
@@ -24,7 +24,7 @@ public partial class addArtist : System.Web.UI.Page
         try
         {
             data.addArtist(aNameText.Text, aWebText.Text, aEmailText.Text);
-
+            artistError.Text = "Artist added!";
         }
         catch
         {

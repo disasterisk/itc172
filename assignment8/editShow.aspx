@@ -36,7 +36,7 @@
                     <asp:DropDownList ID="detailArtistDrop" runat="server"></asp:DropDownList>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="requireDetailArtist" runat="server" ErrorMessage="Please select an artist"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="requireDetailArtist" runat="server" ErrorMessage="Please select an artist" ControlToValidate="detailArtistDrop" InitialValue="0"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -47,8 +47,8 @@
                     <asp:TextBox ID="artistStartText" runat="server"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="requireStartDetail" runat="server" ErrorMessage="Please enter a start time "></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="validStartDetail" runat="server" ErrorMessage="Please enter a valid time"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="requireStartDetail" runat="server" ErrorMessage="Please enter a start time " ControlToValidate="artistStartText"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="validStartDetail" runat="server" ErrorMessage="Please enter a valid time" ControlToValidate="artistStartText" ValidationExpression="(\d{1,2}):(\d\d)"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>

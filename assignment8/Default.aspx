@@ -35,7 +35,7 @@
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="requireSDate" runat="server" ErrorMessage="Please add a show date " ControlToValidate="sDatetext"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="validDate" runat="server" ErrorMessage="Please enter a valid date" ControlToValidate="sDatetext" ValidationExpression="(\d\d)(/|-)(\d\d)(/|-)(\d\d|\d{4})"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="validDate" runat="server" ErrorMessage="Please enter a valid date" ControlToValidate="sDatetext" ValidationExpression="(\d\d)(/|-)(\d\d)(/|-)(\d{4}|\d\d)"></asp:RegularExpressionValidator>
                     </td>
                 </tr>
                 <tr>

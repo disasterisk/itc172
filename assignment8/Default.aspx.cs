@@ -12,7 +12,7 @@ public partial class _Default : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         if (Session["UserKey"] == null)
-            Response.Redirect("../assignment6/Default.aspx");
+            Response.Redirect("venueLogin.aspx");
     }
 
     protected void showButton_Click(object sender, EventArgs e)
@@ -26,6 +26,7 @@ public partial class _Default : System.Web.UI.Page
         try
         {
             data.addShow(sNameText.Text, Convert.ToDateTime(sDatetext.Text), TimeSpan.Parse(sTimeText.Text), sTicketsText.Text, venue);
+            showError.Text = "Show Added!";
         }
         catch
         {
