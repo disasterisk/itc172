@@ -57,9 +57,5 @@ public partial class editShow : System.Web.UI.Page
     {
         Response.Redirect("start.html");
     }
-
-    protected void showDrop_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        showData.DataSource = sdata.getDetail(showDrop.SelectedItem.Text, (int)(Session["Userkey"]));
-    }
+    
 }

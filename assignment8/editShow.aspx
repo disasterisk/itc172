@@ -24,11 +24,6 @@
                 <td></td>
             </tr>
             <tr>
-                <td colspan="3">
-                    <asp:DataGrid ID="showData" runat="server"></asp:DataGrid>
-                </td>
-            </tr>
-            <tr>
                 <td>
                     <asp:Label ID="detailArtistLabel" runat="server">Add Artist</asp:Label>
                 </td>
