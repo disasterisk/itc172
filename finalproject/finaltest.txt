@@ -1,0 +1,7 @@
+Fan register service
+Entered fName, fEmail, fUsername, and password (all strings) into registerFan()
+Returned true
+Entered proceeding fUName and password into fanLogin
+Returned 1
+Fan client
+Entered (Marshall Lee, cat@meow.wow, Marshall, meow)
