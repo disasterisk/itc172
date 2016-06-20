@@ -5,3 +5,7 @@ Entered proceeding fUName and password into fanLogin
 Returned 1
 Fan client
 Entered (Marshall Lee, cat@meow.wow, Marshall, meow)
+adding artists
+Checked off artists and presses. It returns artist added.
+Double-checking, I did a sql query to "select * from FanArtist"
+It returns results
