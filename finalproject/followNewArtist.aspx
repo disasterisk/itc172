@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Add Artists</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
     <form id="addArtistForm" runat="server">
@@ -18,7 +19,7 @@
                     <asp:Button ID="fanArtistQuitButton" Text="Quit" runat="server" OnClick="fanArtistQuitButton_Click" />
                 </td>
                 <td>
-                    <asp:Label ID="addArtistError" Text="" runat="server"></asp:Label>
+                    <asp:Label ID="addArtistError" CssClass="errorLabel" Text="" runat="server"></asp:Label>
                 </td>
             </tr>
         </table>

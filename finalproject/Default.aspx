@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Fan Login</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
     <form id="fLogInForm" runat="server">
@@ -35,7 +36,7 @@
                 <asp:Button ID="fLogInButton" Text="Log In!" runat="server" OnClick="fLogInButton_Click" />
             </td>
             <td>
-                <asp:Label ID="fLogInError" Text="" runat="server"></asp:Label>
+                <asp:Label ID="fLogInError" CssClass="errorLabel" Text="" runat="server"></asp:Label>
             </td>
         </tr>
     </table>

@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Register Fan</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
     <form id="fRegisterForm" runat="server">
@@ -79,7 +80,7 @@
                     <asp:Button ID="fRegisterQuitButton" Text="Quit" runat="server" OnClick="fRegisterQuitButton_Click" CausesValidation="false" />
                 </td>
                 <td>
-                    <asp:Label ID="fRegisterError" Text="" runat="server"></asp:Label>
+                    <asp:Label ID="fRegisterError" Text="" CssClass="errorLabel" runat="server"></asp:Label>
                 </td>
             </tr>
         </table>

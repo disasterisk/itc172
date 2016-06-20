@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Fan Page</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -13,7 +13,7 @@
         <asp:Button ID="showButton" runat="server" Text="All Shows!" OnClick="showButton_Click"></asp:Button>
         <asp:DataGrid ID="data" runat="server"></asp:DataGrid>
         <hr />
-        <asp:DataGrid ID="followedData" runat="server"></asp:DataGrid>
+        <!--<asp:DataGrid ID="followedData" runat="server"></asp:DataGrid>-->
         <a href="followNewArtist.aspx">Follow Artists!</a>
     </form>
 </body>
